@@ -1,24 +1,4 @@
-//open modal
-let addGradient = document.querySelector(".modal")
-let gradientShow = document.querySelector(".showGradient")
 
-const gradient=()=> {
-  addGradient.style.display="block"
-};
-
-//close modal
-let closeBtn= document.getElementById("closeButton")
-const hidemodal =()=>{
-  // addGradient.classList.add(".hide-button")
-  addGradient.style.display="none"
-}
- 
-
-//openCodeModal
-let codeModal= document.querySelector(".code-modal")
-const codemodal=()=> {
-  codeModal.style.display="block"
-};
 
 //LOADER
 window.addEventListener('load', ()=>{
@@ -67,7 +47,6 @@ const showColor = (col1, col2) => {
   console.log(col1, col2, colname);
 };
 
-
 let count = 0;
 const next = () => {
   if (count == color.length - 1) {
@@ -95,22 +74,9 @@ const previous = () => {
   }
 };
 
-const text= document.querySelector(".text")
-
-document.createElement(div)
-
-
-
-
-
-
-
 
 prev.addEventListener("click", previous);
 nex.addEventListener("click", next);
-gradientShow.addEventListener("click", gradient);
-codeModal.addEventListener("click", codemodal);
-closeBtn.addEventListener("click", hidemodal)
 
 
 

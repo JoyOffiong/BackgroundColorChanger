@@ -70,13 +70,5 @@ animation-delay:.8s;
 
 
 .logo{
-    margin: 13% auto;
     text-align: center;
-}
-.logo p{
-    font-style: italic;
-    font-size: larger;
-    font-weight: bolder;
-    text-decoration:underline;
-    font-size: 30px;
 }

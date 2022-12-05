@@ -5,36 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/loader.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/modal.css">
     <title>BackgroundColorChanger</title>
 </head>
 <body >
 
+
+   <!-- loader -->
+   <div class="loader">
+    
+     <div id="img1" class="img">
+       
+     </div>
+     <div id="img2" class="img"></div>
+     <div id="img3" class="img"></div>
+     <div id="img4" class="img"></div>
+     <div id="img5" class="img"></div>
+   </div>  
+
     <div class="body-wrapper">
       <!-- header -->
         <header>
             <div class="first-line">
-                <div class="body-logo">
-                    <P>BLAQKLY</P>
-                 </div>
-                 <div class="far-right">
-                    <button><a href="">shareOnTwitter</a></button>
-                    <button><a href="">shareOnGithub</a></button>
-                 </div>
+               
+                    <P class="body-logo">Blaqkly</P>
+
+                    <div class="links">
+                    <a href="">Share on Twitter</a> 
+                    <a href="">Share on LinkedIn</a> 
+                    </div>
+              
             </div>
     
             <div class="second-line">
                 <div>
                     <button >
-                        <i class="fa-solid fa-bars"></i> <span>Show all gradient</span>
+                        <i class="fa-solid fa-bars"></i> 
                     </button>
+                    <span>Show all gradient</span>
                 </div>
     
                 <div class="icons">
+                  <button class="show-Code">
                     <i class="fa fa-code" aria-hidden="true"></i>
 
+                  </button>
+        
                     <button class="showGradient">
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
                     </button>
@@ -68,22 +87,7 @@
     
     
    
-       <!-- loader -->
-    <div class="loader">
-        <div class="logo">
- 
-         <P>BLAQKLY</P>
-        </div>
-         <div id="img1" class="img">
-           
-         </div>
-         <div id="img2" class="img"></div>
-         <div id="img3" class="img"></div>
-         <div id="img4" class="img"></div>
-         <div id="img5" class="img"></div>
-         
-     
-   </div>
+      
 
    <!-- Add gradient modal -->
    <div class="modal">
@@ -103,19 +107,24 @@
    <div class="code-modal">
     <div class="modal-pop">
       <div class="button">
-        <span id="closeButton">x</span>
+        <span id="closeButton" onclick="hidecodemodal()">x</span>
       </div>
           <div class="text">
-            <pre>
-              <code>
+            
+              <!-- <code>
                 
-              </code>
-              </pre>
+              </code> -->
+             
 
       </div>
     </div>
 
   </div>
+
+  
+ 
+</div>
 </body>
 <script src="/index.js"></script>
+<!-- <script src="/modal.js"></script> -->
 </html>
