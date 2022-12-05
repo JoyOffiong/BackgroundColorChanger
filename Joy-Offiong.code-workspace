@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../My Portfolio/Joy-Offiong"
+		},
+		{
+			"path": "../../CodeAsk/code-ask-react-fe"
+		},
+		{
+			"path": "../../PaymentGetway"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "20daysChallenge"
+	}
+}

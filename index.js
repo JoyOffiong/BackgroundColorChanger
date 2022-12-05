@@ -1,5 +1,27 @@
+
+
+
+
+
+window.addEventListener('load', ()=>{
+  const loader = document.querySelector('.loader');
+
+  const body = document.querySelector('.body-wrapper');
+     body.style.display="none"
+
+     setTimeout(() => {
+      loader.classList.add("loader-hidden");
+      body.style.display="block"
+
+      
+      showColor(color[0].col1, color[0].col2);
+    }, 
+    3000);
+
+})
+
 let color = [
-  { col1: "#780206", col2: "#061161" },
+  { col1: "#780206", col2: "#061161", colname:"beautiful"},
   { col1: "#FBD3E9", col2: "#BB377D" },
   { col1: "#00d2ff", col2: "#3a7bd5" },
   { col1: "#f2709c", col2: "#ff9472" },
@@ -15,14 +37,16 @@ let color = [
 let prev = document.getElementById("prev");
 let nex = document.getElementById("next");
 let text =document.querySelector(".colors")
+const body = document.querySelector('.body');
 
-const showColor = (col1, col2) => {
+const showColor = (col1, col2,) => {
   let gradient1 = "linear-gradient(to left" + ", " + col1 + ", " + col2 + ")";
-  document.body.style.backgroundImage = gradient1;
+ body.style.backgroundImage = gradient1;
   text.innerHTML =  ` Gradients are:${col1}, ${col2}`
+  alert(colname)
   console.log(col1, col2);
 };
-showColor(color[0].col1, color[0].col2);
+
 
 let count = 0;
 const next = () => {
