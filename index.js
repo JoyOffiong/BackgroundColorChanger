@@ -48,15 +48,22 @@ const showColor = (col1, col2) => {
 };
 
 let count = 0;
+
+localStorage.setItem("count", JSON.stringify(count))
 const next = () => {
   if (count == color.length - 1) {
     count = 0;
+
+    localStorage.setItem("count", JSON.stringify(count))
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
+    codeWrap.innerHTML= snippet(color)
   } else {
     count++;
+    localStorage.setItem("count", JSON.stringify(count))
     showColor(color[count].col1, color[count].col2); 
     text.innerHTML=`${color[count].colname}`
+    codeWrap.innerHTML= snippet(color)
 
   }
   console.log(count);
@@ -65,12 +72,16 @@ const next = () => {
 const previous = () => {
   if (count > 0) {
     count--;
+    localStorage.setItem("count", JSON.stringify(count))
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
+    codeWrap.innerHTML= snippet(color)
   } else {
     count = color.length - 1;
+    localStorage.setItem("count", JSON.stringify(count))
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
+    codeWrap.innerHTML= snippet(color)
   }
 };
 
