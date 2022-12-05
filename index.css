@@ -3,6 +3,8 @@ body{
     padding: 0;
     height: 100vh;
     transition: 5s linear ease-in-out;
+    position: relative;
+    
 }
 
 
@@ -28,23 +30,31 @@ body{
 i{
     font-size: 30px;
 }
+
 .colors{
     text-align: center;
-    margin-top: 30px;
     font-size: large;
-    background-color: aliceblue;
     width: 400px;
-    margin:  auto;
+    text-align: center;
+    margin: auto;
     padding: 30px;  
     border-radius: 5px;
+    color: white;
+    display:flex ;
 }
 
-div .colors{
-    padding-top: 30px;
-}
+
 
 .first-line, .second-line{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+}
+
+.body-logo{
+    font-size:20px;
+    font-weight: bold;
+    font-style: italic;
+
 }

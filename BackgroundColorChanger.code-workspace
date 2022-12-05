@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../CodeAsk/code-ask-react-fe"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BackgroundColorChanger"
+	}
+}

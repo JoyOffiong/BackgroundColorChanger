@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/loader.css">
-
+    <link rel="stylesheet" href="/modal.css">
     <title>BackgroundColorChanger</title>
 </head>
 <body >
 
     <div class="body-wrapper">
+      <!-- header -->
         <header>
             <div class="first-line">
-                <div>
+                <div class="body-logo">
                     <P>BLAQKLY</P>
                  </div>
                  <div class="far-right">
@@ -26,22 +27,28 @@
     
             <div class="second-line">
                 <div>
-                    <i class="fa-solid fa-bars"></i> <span>Show all gradient</span>
+                    <button >
+                        <i class="fa-solid fa-bars"></i> <span>Show all gradient</span>
+                    </button>
                 </div>
     
                 <div class="icons">
                     <i class="fa fa-code" aria-hidden="true"></i>
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+
+                    <button class="showGradient">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </button>
+                    
                 </div>
             </div>
         </header>
     
     
       
-           
+           <!-- color body -->
             <div class="body">
         
-                <div>
+                <div class="colorname">
 
                     <p class="colors"> </p>
                 </div>
@@ -59,9 +66,9 @@
             </div>
        
     
-    </div>
+    
    
-       
+       <!-- loader -->
     <div class="loader">
         <div class="logo">
  
@@ -77,6 +84,38 @@
          
      
    </div>
+
+   <!-- Add gradient modal -->
+   <div class="modal">
+    <div class="modal-pop">
+      <div class="button">
+        <span id="closeButton">x</span>
+      </div>
+          <div class="text">
+            <p>Add a new Gradient</p>
+          Adding a gradient is easy. All gradients are read from a gradients.json file which is available in this project's repo. Simply add your gradient details to it and submit a pull request.
+          </div>
+
+      </div>
+    </div>
+
+   <!-- CSS CODE -->
+   <div class="code-modal">
+    <div class="modal-pop">
+      <div class="button">
+        <span id="closeButton">x</span>
+      </div>
+          <div class="text">
+            <pre>
+              <code>
+                
+              </code>
+              </pre>
+
+      </div>
+    </div>
+
+  </div>
 </body>
 <script src="/index.js"></script>
 </html>
