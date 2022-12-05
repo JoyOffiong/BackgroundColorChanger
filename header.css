@@ -59,4 +59,12 @@ button:hover{
 }
 
 
+@media(max-width: 1000px){
+header{
+    text-align: center;
+};
 
+button{
+    display: none;
+}
+}
