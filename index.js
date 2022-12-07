@@ -55,15 +55,15 @@ const next = () => {
     count = 0;
 
     localStorage.setItem("count", JSON.stringify(count))
+    codemodalContent()
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
-    codeWrap.innerHTML= snippet(color)
   } else {
     count++;
     localStorage.setItem("count", JSON.stringify(count))
+    codemodalContent()
     showColor(color[count].col1, color[count].col2); 
     text.innerHTML=`${color[count].colname}`
-    codeWrap.innerHTML= snippet(color)
 
   }
   console.log(count);
@@ -73,15 +73,15 @@ const previous = () => {
   if (count > 0) {
     count--;
     localStorage.setItem("count", JSON.stringify(count))
+    codemodalContent()
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
-    codeWrap.innerHTML= snippet(color)
   } else {
     count = color.length - 1;
     localStorage.setItem("count", JSON.stringify(count))
+    codemodalContent()
     showColor(color[count].col1, color[count].col2);
     text.innerHTML=`${color[count].colname}`
-    codeWrap.innerHTML= snippet(color)
   }
 };
 

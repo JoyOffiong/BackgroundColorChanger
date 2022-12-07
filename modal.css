@@ -23,13 +23,23 @@
   .button{
     font-size: 50px;
     padding: 10px;
+    margin-left: 90%;
+    margin-bottom: 6%;
     text-align: right;
-    width: 96.8%;
+    height: 2rem;
+    width: 2rem;
+    transform: rotate(45deg);
   }
 
-  #closeButton{
+  #diaper {
+    font-size: 15px;
+  }
+
+  #closeButton,
+  #closeButton2{
     cursor: pointer;
   }
+
   .text{
     text-align: center;
     font-size: 18px;
@@ -55,3 +65,15 @@
   .modal-hidden{
     display: block;
   } 
+
+  .snipKey { 
+    color: darkturquoise;
+  }
+
+  .snipMiddle {
+    color: dodgerblue;
+  }
+
+  .snipValue {
+    color: crimson;
+  }

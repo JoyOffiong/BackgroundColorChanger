@@ -17,9 +17,10 @@ const hidemodal = () => {
 //openCodeModal
 let showCode = document.querySelector(".show-Code");
 let codeModal = document.querySelector(".code-modal");
-const codemodalContent = () => {
+const codemodal = () => {
   // Inside the code  block
 const textWrap = document.querySelector(".text2");
+let codeWrap = document.createElement('div');
 
 //color[count]
 
@@ -28,29 +29,21 @@ let count = localStorage.getItem('count')
 console.log(count)
 const { col1, col2 } = color[count];
 
-return `<div>
-<pre id="diaper">
-    {
-      <code> <span class="snipKey">backgroundGradient</span><span class="snipMiddle">:</span> <span class="snipValue">${col1}<span><span class="snipMiddle">;</span></code>
-      <code> <span class="snipKey">background</span><span class="snipMiddle">: -webkit-linear-gradient(to right,</span> <span class="snipValue">${col1}, ${col2})<span><span class="snipMiddle">;</span></code>
-      <code> <span class="snipKey">background</span><span class="snipMiddle">: linear-gradient(to right,</span> <span class="snipValue">${col1}, ${col2})<span><span class="snipMiddle">;</span></code>
-    }
-</pre>
-</div>
+return `<p> backgroundGradient: ${col1}</p>
+<p> background: -webkit-linear-gradient(to right, ${col1}, ${col2});</p>
+<p> background: linear-gradient(to right, ${col1}, ${col2});</p>
 `;
 }
 
 let codede = () => {
-  textWrap.innerHTML= snippet(color)
+  codeWrap.innerHTML= snippet(color)
 }
 
 codede()
-};
-
-const codemodal = () => {
-  codemodalContent()
+console.log(codeWrap)
+textWrap.appendChild(codeWrap);
   codeModal.style.display = "block";
-}
+};
 
 //close CODE
 const hidecodemodal = () => {
@@ -58,7 +51,6 @@ const hidecodemodal = () => {
   textWrap.innerHTML = ""
   codeModal.style.display = "none";
 };
-
 
 
 
